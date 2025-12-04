@@ -152,8 +152,33 @@
                     </p>
                 </div>
             </div>
-            
         </div>
+        <form method="post" class="mx-auto md:w-fit mt-15 p-5 rounded-2xl bg-stone-100">
+            <fieldset>
+                <legend class="text-xl mb-2">Skicka idéer om juldekorationer!</legend>
+                <div class="flex flex-col md:grid md:grid-cols-[20rem_20rem] gap-5">
+                    <div class="flex flex-col">
+                        <label for="firstname">Förnamn:</label>
+                        <input type="text" id="firstname" name="firstname" autocomplete="given-name"
+                            placeholder="Skriv ditt förnamn...">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="lastname">Efternamn:</label>
+                        <input type="text" id="lastname" name="lastname" autocomplete="family-name"
+                            placeholder="Skriv ditt efternamn...">
+                    </div>
+                    <div class="col-span-2 flex flex-col">
+                        <label for="ideas">Idéer:</label>
+                        <textarea id="ideas" name="ideas" placeholder="Skriv ner dina idéer/förslag här..."></textarea>
+                    </div>
+                    <div class="col-span-2">
+                        <button type="submit"
+                            class="bg-green-500 p-2 rounded-2xl hover:brightness-90 cursor-pointer">Skicka</button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
     </main>
     <footer class="col-span-2 py-4 bg-slate-700 text-stone-50 order-4">
         <div class="container mx-auto text-center">

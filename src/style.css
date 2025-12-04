@@ -4,6 +4,15 @@ body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+@layer base {
+  input {
+    @apply leading-10 ps-2;
+  }
+
+  textarea {
+    @apply p-2;
+  }
+}
 
 @layer components {
   .custom-nav>ul {
