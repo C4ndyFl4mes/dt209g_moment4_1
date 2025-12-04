@@ -12,7 +12,7 @@ export default defineConfig({
         about: 'about.html',
         products: 'products.html',
         product: 'product.html',
-        news: 'product.html'
+        news: 'news.html'
       }
     }
   }
