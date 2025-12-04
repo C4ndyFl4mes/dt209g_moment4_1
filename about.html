@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Tomteverkstaden - Vilka är vi?</title>
+</head>
+
+<body>
+    <header class="px-2 bg-slate-700 grid md:grid-cols-[1fr_15rem] lg:grid-cols-[1fr_20rem]">
+        <div class="flex justify-between items-center flex-wrap">
+            <a href="/" class="flex gap-x-2 flex-wrap">
+                <!-- Reshot Free License https://www.reshot.com/license/ -->
+                <img src="/logo.svg" width="64" height="64" alt="Logotyp">
+                <p class="text-2xl text-white self-center">Tomteverkstaden</p>
+            </a>
+            <button id="menu-btn" class="p-2 rounded bg-amber-300 md:hidden" aria-controls="nav-menu"
+                aria-expanded="false" aria-label="Öppna meny">
+                Meny
+            </button>
+            <div id="nav-backdrop" class="fixed inset-0 bg-black opacity-50 bg-opacity-40 hidden z-40 md:hidden"
+                aria-hidden="true"></div>
+            <nav id="nav-menu" aria-hidden="true"
+                class="custom-nav fixed right-0 top-0 bottom-0 w-full sm:w-3/4 md:w-auto md:static md:block translate-x-full md:translate-x-0 bg-slate-700 p-6 z-50">
+                <div class="flex justify-between items-center md:hidden">
+                    <strong class="text-white">Meny</strong>
+                    <button id="menu-close-btn" class="p-2 rounded bg-amber-300" aria-label="Stäng meny">Stäng</button>
+                </div>
+                <ul>
+                    <li><a href="/">Startsida</a></li>
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="min-h-[90vh] px-[5%] pt-4 mb-10">
+        <h1 class="text-4xl mb-3">Om oss</h1>
+        <div class="flex gap-10 flex-wrap justify-between">
+            <div>
+                <div>
+                    <h2 class="text-3xl mb-1">Vilka är vi?</h2>
+                    <div class="max-w-200 flex flex-col flex-wrap gap-y-5">
+                        <article class="custom-employee-article">
+                            <div
+                                class="rounded-[100%] overflow-hidden md:row-span-2 aspect-square border-2 border-slate-800 my-auto">
+                                <img src="/images/elf3.jpg" width="180" height="180"
+                                    alt="En bild på chefnissen Felix Selin.">
+                            </div>
+                            <h3 class="text-2xl my-auto">Chefnissen Felix Stjärnljus</h3>
+                            <p>
+                                Felix Stjärnljus är en varm, strukturerad och erfaren chefnisse som hållit ihop
+                                Tomteverkstadens verksamhet i över tio år. Med sin glimten-i-ögat-ledarstil
+                                samordnar han allt från produktion till logistik och är känd för att alltid lösa problem
+                                innan någon annan hunnit märka dem.
+                            </p>
+                        </article>
+                        <article class="custom-employee-article">
+                            <div
+                                class="rounded-[100%] overflow-hidden md:row-span-2 aspect-square border-2 border-slate-800 my-auto">
+                                <img src="/images/elf1.jpg" width="180" height="180"
+                                    alt="En bild på hanverksmästaren Nina Selin.">
+                            </div>
+                            <h3 class="text-2xl my-auto">Hantverksmästare Nina Selin</h3>
+                            <p>
+                                Nina Selin är en ung men exceptionellt skicklig hantverksmästare med ett öga för
+                                detaljer och en passion för traditionellt julhantverk. Hon leder arbetet i ateljén,
+                                förfinar varje figur för hand och inspirerar teamet med sin kreativa energi och sitt
+                                lugna, trygga ledarskap.
+                            </p>
+                        </article>
+                        <article class="custom-employee-article">
+                            <div
+                                class="rounded-[100%] overflow-hidden md:row-span-2 aspect-square border-2 border-slate-800 my-auto">
+                                <img src="/images/elf2.jpg" width="180" height="180"
+                                    alt="En bild på produktutvecklaren Olle Idenfors.">
+                            </div>
+                            <h3 class="text-2xl my-auto">Produktutvecklare Olle Idenfors</h3>
+                            <p>
+                                Olle Idenfors är en ung, innovativ produktutvecklare som brinner för att förena
+                                tradition med nytänkande. Han skissar fram nya figurer, testar material och utvecklar
+                                detaljer som lyfter varje kollektion. Hans idéer driver Tomteverkstaden mot en modernare
+                                men fortfarande magisk framtid.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-3xl mb-1">Historia</h2>
+                <div class="max-w-200 flex flex-col gap-y-5">
+                    <p>
+                        Tomteverkstaden grundades år 1894 i den snörika utkanten av Kiruna, där de tre barndomsvännerna
+                        Erland
+                        Frosthjärta, Mira Stjärnljus och Tore Hällvin bestämde sig för att kombinera sin kärlek till
+                        jultraditioner
+                        med passionen för hantverk. Deras vision var enkel men ambitiös: att skapa högkvalitativa
+                        julfigurer
+                        och
+                        dekorationsföremål som skulle hålla i generationer och sprida glädje i varje hem. Från början
+                        bestod
+                        verksamheten av ett litet timrat skjul och en handfull lokala hantverkare, men rykten spred sig
+                        snabbt
+                        om
+                        den ovanliga kvaliteten och värmen i deras produkter.
+                    </p>
+                    <p>
+                        Under 1900-talets första hälft växte Tomteverkstaden stadigt, och företaget blev snart en
+                        uppskattad
+                        producent av traditionella tomtar, renar, vinterlandskap och handmålade dekorationer. När tredje
+                        generationens hantverkare tog över i slutet av 1960-talet, moderniserades produktionen varsamt
+                        utan
+                        att
+                        förlora det genuina hantverket som blivit företagets signum. Deras filosofi förblir densamma än
+                        idag:
+                        varje
+                        figur ska vara en berättelse, och varje berättelse ska kännas levande.
+                    </p>
+                    <p>
+                        Idag sysselsätter Tomteverkstaden cirka 140 anställda, varav ungefär två tredjedelar arbetar i
+                        de
+                        kreativa
+                        delarna av produktionen – skulptering, målning, formutveckling och detaljarbete. Resten arbetar
+                        med
+                        logistik, kundservice, design, marknad och deras växande e-handelsverksamhet. De anställda
+                        benämns
+                        internt
+                        som ”nissar”, en tradition som hängt med sedan starten och som skapat en stark företagskultur
+                        präglad av
+                        gemenskap, humor och stolthet.
+                    </p>
+                    <p>
+                        År 2025 flyttade Tomteverkstaden sitt huvudkontor från Kiruna till Haparanda, där större lokaler
+                        och
+                        förbättrade logistikmöjligheter möjliggjorde ytterligare expansion. Trots flytten finns en liten
+                        filial
+                        kvar
+                        i Kiruna som hedrar företagets rötter.
+                    </p>
+                    <p>
+                        Genom över 130 år av hantverk, tradition och innovation har Tomteverkstaden etablerat sig som
+                        Nordens
+                        mest
+                        stämningsfulla och ikoniska producent av juldekorationer – och resan fortsätter att glittra.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <footer class="col-span-2 py-4 bg-slate-700 text-stone-50 order-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; Isaac Svedin</p>
+        </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

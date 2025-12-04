@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Tomteverkstaden - Julen är här – därför bjuder Tomteverkstaden på årets stora julrea</title>
+</head>
+
+<body>
+    <header class="px-2 bg-slate-700 grid md:grid-cols-[1fr_15rem] lg:grid-cols-[1fr_20rem]">
+        <div class="flex justify-between items-center flex-wrap">
+            <a href="/" class="flex gap-x-2 flex-wrap">
+                <!-- Reshot Free License https://www.reshot.com/license/ -->
+                <img src="/logo.svg" width="64" height="64" alt="Logotyp">
+                <p class="text-2xl text-white self-center">Tomteverkstaden</p>
+            </a>
+            <button id="menu-btn" class="p-2 rounded bg-amber-300 md:hidden" aria-controls="nav-menu"
+                aria-expanded="false" aria-label="Öppna meny">
+                Meny
+            </button>
+            <div id="nav-backdrop" class="fixed inset-0 bg-black opacity-50 bg-opacity-40 hidden z-40 md:hidden"
+                aria-hidden="true"></div>
+            <nav id="nav-menu" aria-hidden="true"
+                class="custom-nav fixed right-0 top-0 bottom-0 w-full sm:w-3/4 md:w-auto md:static md:block translate-x-full md:translate-x-0 bg-slate-700 p-6 z-50">
+                <div class="flex justify-between items-center md:hidden">
+                    <strong class="text-white">Meny</strong>
+                    <button id="menu-close-btn" class="p-2 rounded bg-amber-300" aria-label="Stäng meny">Stäng</button>
+                </div>
+                <ul>
+                    <li><a href="/">Startsida</a></li>
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="min-h-[90vh] px-[5%] pt-4 mb-10">
+        <article class="bg-stone-50 p-2 max-w-250 mx-auto rounded-2xl">
+            <h1 class="text-4xl mb-3 text-center">Julen är här – därför bjuder Tomteverkstaden på årets stora julrea</h1>
+                <div class="max-w-200 flex flex-col gap-y-5 mx-auto mt-10 leading-8.5">
+                    <p>
+                        Julen närmar sig med stormsteg, och i Tomteverkstaden råder full aktivitet. Nissar springer i
+                        korridorerna med armarna fulla av paket, renarna tränar start och landning inför
+                        långflygningarna,
+                        och
+                        tomten själv går runt med en lista som faktiskt verkar växa snabbare än han hinner läsa den. Men
+                        mitt i
+                        allt detta finns något som sprider extra mycket värme i vintermörkret: Tomteverkstadens stora
+                        julrea
+                        har
+                        officiellt dragit igång.
+                    </p>
+                    <p>
+                        Precis som tidigare år firas starten på julens mest magiska period med kraftigt sänkta priser på
+                        ett
+                        brett utbud av dekorationer, prydnadstomtar, julfigurer, glittrande granhängen och nostalgiska
+                        juldioramor. Rean är Tomteverkstadens sätt att tacka alla sina trogna kunder – både de som följt
+                        dem
+                        i
+                        många år och de som nyss upptäckt deras kollektioner. ”Vi vill att alla ska kunna skapa sin egen
+                        julmagi, oavsett budget,” säger huvudnissen Tistel, som ansvarar för prissättningen och enligt
+                        rykten
+                        använder en miniräknare som gnistrar av stjärnstoft.
+                    </p>
+                    <p>
+                        Sortimentet är större än någonsin och inkluderar bland annat handmålade tomtefigurer, klassiska
+                        renmotiv
+                        samt flera helt nya vinterlandskap. Många av produkterna är tillverkade i begränsad upplaga och
+                        brukar
+                        ta slut långt innan julveckan. Därför uppmuntras kunder att vara ute i god tid – eller
+                        åtminstone
+                        snabbare än Rudolf på raksträckan.
+                    </p>
+                    <p>
+                        Tomteverkstaden planerar också små överraskningar under hela december, som hemliga luckrabatter,
+                        kvällsöppet med extra mysfaktor och ett digitalt besök av tomten själv. Det ryktas till och med
+                        om
+                        att
+                        nissarna bjuder på tips för hur man skapar den perfekta juldukningen hemma.
+                    </p>
+                    <p>
+                        Oavsett om du samlar på tomtar, bygger upp ett helårs-vinterlandskap eller bara vill ge hemmet
+                        en
+                        stänk
+                        av julglädje, är detta rätt tid att fynda. Julrean är här – och den är lika magisk som snöfallet
+                        över
+                        Nordpolen.
+                    </p>
+                <strong class="ms-auto mt-15 mb-3">Felix Stjärnljus, 4 december 2025</strong>
+                </div>
+        </article>
+    </main>
+    <footer class="py-4 bg-slate-700 text-stone-50 order-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; Isaac Svedin</p>
+        </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+
+</html>

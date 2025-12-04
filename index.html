@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/logo.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
+  <title>Tomteverkstaden - Startsida</title>
+</head>
+
+<body class="min-h-screen grid md:grid-cols-[1fr_15rem] lg:grid-cols-[1fr_20rem]">
+    <header class="col-span-2 px-2 bg-slate-700 order-1 grid md:grid-cols-[1fr_15rem] lg:grid-cols-[1fr_20rem]">
+      <div class="flex justify-between items-center flex-wrap">
+        <a href="/" class="flex gap-x-2 flex-wrap">
+          <!-- Reshot Free License https://www.reshot.com/license/ -->
+          <img src="/logo.svg" width="64" height="64" alt="Logotyp">
+          <p class="text-2xl text-white self-center">Tomteverkstaden</p>
+        </a>
+        <button id="menu-btn" class="p-2 rounded bg-amber-300 md:hidden" aria-controls="nav-menu" aria-expanded="false"
+          aria-label="Öppna meny">
+          Meny
+        </button>
+        <div id="nav-backdrop" class="fixed inset-0 bg-black opacity-50 bg-opacity-40 hidden z-40 md:hidden"
+          aria-hidden="true"></div>
+        <nav id="nav-menu" aria-hidden="true"
+          class="custom-nav fixed right-0 top-0 bottom-0 w-full sm:w-3/4 md:w-auto md:static md:block translate-x-full md:translate-x-0 bg-slate-700 p-6 z-50">
+          <div class="flex justify-between items-center md:hidden">
+            <strong class="text-white">Meny</strong>
+            <button id="menu-close-btn" class="p-2 rounded bg-amber-300" aria-label="Stäng meny">Stäng</button>
+          </div>
+          <ul>
+            <li><a href="/">Startsida</a></li>
+            <li><a href="products.html">Produkter</a></li>
+            <li><a href="about.html">Om oss</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="col-span-2 md:col-span-1 min-h-[90vh] px-[5%] pt-4 order-3 md:order-2">
+      <div class="border-2 rounded-2xl border-slate-800 overflow-hidden">
+        <img src="/images/hero.jpg" alt="En stor bild som visar ett dimigt Vilhelmina.">
+      </div>
+      <h1 class="text-4xl my-3 text-cyan-600 text-center">Välkommen till Tomteverk&shy;staden</h1>
+      <section class="container mx-auto p-2 flex flex-wrap">
+        <h2 class="text-3xl w-full">Senaste från oss</h2>
+        <article class="custom-news-article bg-white">
+          <h3 class="text-2xl">Julen är här – därför bjuder Tomteverkstaden på årets stora julrea</h3>
+          <p>
+            Julen närmar sig med stormsteg, och i Tomteverkstaden råder full aktivitet. Nissar springer i korridorerna
+            med armarna fulla av paket, renarna tränar start och landning inför långflygningarna, och tomten själv går
+            runt med en lista som faktiskt verkar växa snabbare än han hinner läsa den. Men mitt i allt detta finns
+            något som sprider extra mycket värme i vintermörkret: Tomteverkstadens stora julrea har officiellt [...]
+          </p>
+          <a href="/news.html">Läs mer</a>
+        </article>
+        <article class="custom-news-article bg-white">
+          <h3 class="text-2xl">Tomteverkstaden lanserar ett helt nytt sortiment – inspirerat av nordisk vintermagi</h3>
+          <p>
+            Tomteverkstaden presenterar stolt sitt nya sortiment inför vintersäsongen – en kollektion formad av nordiska
+            sagor, tidlös julmagi och hantverk som förts vidare genom generationer av nissar. Efter månader av
+            skissande, testande och viss oenighet om mängden glitter, är nu den efterlängtade kollektionen redo att
+            [...]
+          </p>
+          <a href="/news.html">Läs mer</a>
+        </article>
+        <article class="custom-news-article bg-white">
+          <h3 class="text-2xl">Tomteverkstaden flyttar huvudkontoret – från Kiruna till Haparanda</h3>
+          <p>
+            Efter många år i Kiruna har Tomteverkstaden nu tagit det stora beslutet att flytta sitt huvudkontor till
+            Haparanda. Förändringen markerar en ny epok för den anrika verksamheten, som vuxit stadigt under de senaste
+            åren och nu behöver mer utrymme för både produktion, lager och sina växande nisstyrkor.
+          </p>
+          <a href="/news.html">Läs mer</a>
+        </article>
+      </section>
+    </main>
+    <aside class="col-span-2 md:col-span-1 xl:min-w-20 bg-slate-700 order-2 md:order-3 text-stone-50">
+      <h2 class="text-3xl text-center">Populära produkter</h2>
+      <div class="flex justify-center md:flex-col flex-wrap sm:flex-nowrap">
+        <article class="custom-product-article bg-slate-700 p-2">
+          <div>
+            <img src="/images/santa1.jpg" alt="En tomte med en liten pojke.">
+          </div>
+          <h3 class="text-2xl">Tomten med pojken</h3>
+          <p>Skapa julstämning i hemmet med denna charmiga dekorationsfigur föreställande en snäll, traditionellt klädd
+            tomte tillsammans med [...]</p>
+          <a href="#">Till produkten</a>
+        </article>
+        <article class="custom-product-article bg-slate-700 p-2">
+          <div>
+            <img src="/images/santa4.jpg" alt="En tomte med en liten flicka.">
+          </div>
+          <h3 class="text-2xl">Tomten med flickan</h3>
+          <p>Denna vackra juldekoration föreställer en vänlig tomte i en silver- och vitfärgad dräkt, rikligt dekorerad
+            med detaljer som skapar [...]</p>
+          <a href="#">Till produkten</a>
+        </article>
+        <article class="custom-product-article bg-slate-700 p-2">
+          <div>
+            <img src="/images/santa2.jpg" alt="En tomte med en liten flicka.">
+          </div>
+          <h3 class="text-2xl">Tomten med renen</h3>
+          <p>Denna detaljrika julfigur föreställer en varm och vänlig tomte klädd i en ljus vinterdräkt med
+            silverglittrande [...]</p>
+          <a href="#">Till produkten</a>
+        </article>
+      </div>
+    </aside>
+    <footer class="col-span-2 py-4 bg-slate-700 text-stone-50 order-4">
+      <div class="container mx-auto text-center">
+        <p>&copy; Isaac Svedin</p>
+      </div>
+    </footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
